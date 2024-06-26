@@ -1,0 +1,92 @@
+body {
+    background-color: #f8f9fa;
+    position: relative; /* Adicionado para posicionar o HUD */
+  }
+  
+  .container {
+    max-width: 800px;
+    margin-top: 50px;
+    position: relative;
+  }
+  
+  .jumbotron {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  
+  #parking-info {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  #available-spaces {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Permite que os elementos quebrem para a próxima linha */
+  }
+  
+  #available-spaces li {
+    margin-right: 10px; /* Espaçamento entre os itens */
+    margin-bottom: 10px; /* Espaçamento entre as linhas */
+  }
+  
+  #occupied-spaces {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #parking-control {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  #car-info {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  #hud {
+    font-family: fontedoGTA;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: rgb(0, 248, 41);
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+  }
+  
+  #money-icon {
+    font-size: 20px;
+    margin-right: 5px;
+  }
+  
+  #money-counter {
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .btn {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  
+  @font-face {
+    font-family: 'fontedoGTA';
+    src: url('pricedown\ bl.otf') format('opentype');
+    /* ajuste o caminho conforme a estrutura do seu projeto */
+    font-weight: normal;
+    font-style: normal;
+}

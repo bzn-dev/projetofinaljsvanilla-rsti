@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estacionamento</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <header class="jumbotron text-center">
+      <h1 class="display-4">Estacionamento RSTI</h1>
+    </header>
+    <div id="parking-info" class="mb-4">
+      <h3 class="mb-3">Vagas Disponíveis:</h3>
+      <ul id="available-spaces" class="list-group"></ul>
+      <h3 class="mt-4 mb-3">Vagas Ocupadas:</h3>
+      <ul id="occupied-spaces" class="list-group"></ul>
+    </div>
+    <div id="parking-control" class="mb-4">
+      <button class="btn btn-primary mr-2" onclick="addParkingSpace()">Adicionar Vaga</button>
+      <button class="btn btn-danger mr-2" onclick="removeParkingSpaceById()">Remover Vaga por ID</button>
+      <button class="btn btn-success mr-2" onclick="carEntry()">Registrar Entrada de Veículo</button>
+      <button class="btn btn-warning" onclick="carExit()">Registrar Saída de Veículo</button>
+    </div>
+    <div id="car-info" class="mb-4"></div>
+    <div id="hud" class="text-center">
+      <div id="money-icon" class="d-inline-block">$</div>
+      <div id="money-counter" class="d-inline-block">0.00</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
